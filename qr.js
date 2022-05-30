@@ -1,32 +1,58 @@
+
 const chalk = require('chalk');
-const {WAConnection, MessageOptions, MessageType, Mimetype} = require('@adiwajshing/baileys');
-const {StringSession} = require('./asiatabot/');
+const { WAConnection, MessageType } = require('@adiwajshing/baileys');
 const fs = require('fs');
 
-async function asiatabot () {
-    const conn = new WAConnection();
-    const Session = new StringSession();  
-    conn.version = [3, 3234, 9]
-    conn.logger.level = 'warn';
-    conn.regenerateQRIntervalMs = 50000;
+async function asiata() {
+	const conn = new WAConnection();
+	conn.logger.level = 'warn';
+	conn.version = [2, 2140, 12]
+//[2, 2140, 12]
+	conn.on('connecting', async () => {
+		console.log(`${chalk.green.bold('ASIATA')}${chalk.blue.bold('ASIATA')}
+${chalk.white.italic('ASIATA')}
+${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please wait.')}`);
+	});
 
-    conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('SL')}${chalk.blue.bold('ASIATA')}
-${chalk.white.italic('ASIATA Sting session')}
-${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
-    });
-    conn.on('open', async () => {
-        var st = Session.createStringSession(conn.base64EncodedAuthInfo());
-        console.log(
-            chalk.green.bold(conn.user.jid.startsWith('90') || conn.user.jid.startsWith('94') ? 'Session එකට දාන්න ඕන කෝඩ් එක: ' : 'String Code: '), st
-        );
+	conn.on('open', async () => {
+		console.log(
+			chalk.green.bold('ASIATABOT QR Code: '),
+			'AQUA;;;' +
+				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
+					'base64'
+				)
+		);
+		await conn.sendMessage(
+			conn.user.jid,
+			'ASIATA;;;' +
+				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
+					'base64'
+				),
+			MessageType.text
+		);
+		if (conn.user.jid.startsWith('94')) {
+			await conn.sendMessage(
+				conn.user.jid,
+				'*🛑 මේක කාටවත් දෙන්න එපා mchn  ' + conn.user.name + '* 🛑',
+				MessageType.text
+			);
+		} else {
+			await conn.sendMessage(
+				conn.user.jid,
+				'*🛑 Please Do Not Share This Code With Anyone mchn  ' + conn.user.name + '* 🛑',
+				MessageType.text
+			);
+		}
+		console.log(
+			
+			chalk.green.bold(
+				'IF YOU CANNOT COPY THE MESSAGE, PLEASE CHECK WHATSAPP. QR CODE SENT TO YOUR OWN NUMBER !!'
+			)
+		);
+		process.exit(0);
+	});
 
-        if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `ASIATA_SESSION="${st}"`);
-        }
-        console.log(conn.user.jid.startsWith('90') || conn.user.jid.startsWith('94') ? 'මේක කාටවත් දෙන්න එපා ' + conn.user.name : 'Dont Share This Code to Anyone ' + conn.user.name)
-        process.exit(0);
-    });
-    await conn.connect();
+	await conn.connect();
 }
-asiatabot()
+
+asiata();
