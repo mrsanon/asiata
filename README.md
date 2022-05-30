@@ -1,10 +1,21 @@
  <h1 align="center"><b>🐋AQuaBot 🐋 An user Bot for Whatsapp</b></h1>
  ### ඔබට පහසුවෙන් QR කේතය Repl.it මඟින් ලබා ගත හැක.. පහල බටනය CLICK කරන්න
 
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@MagmaGaming/AQUABOT-REPL#index.js)
+## 👨‍🔧Setup 
 
-## QR කේතය ලබා ගත් පසු Bot deploy කිරීමට පහල බටනය CLICK කරන්න..
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FiamMagma%2Fptsp)
+### සරල ක්‍රමය
+
+#### ඔබට පහසුවෙන්ම Repl.it මඟින් ASIATA QR කේතය ලබා ගන්න පුලුවන්..පහල  බටනය භාවිත කරන්න
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/mrsanon/ASIATA+BETA+QR)
+
+ASIATA ගොඩනැගීමට ඔබට ජංගම දුරකථන 2 ක් අවශ්‍ය වේ!
+ඔබ දෙවන උපාංගයෙන් bot ක්‍රියා කරනු ඇත. 
+ඔබ පළමු උපාංගය සමඟ පමණක් QR කේතය generate කරනු ඇත.
+පළමු උපාංගයෙන් ඔබට ASIATA බොට් ස්ථාපනය කිරීමට අවශ්‍යයි..`
+
+#### QR කේතය ලබා ගත් පසු පහල බටනය ඔබලා ASIATA බොට් deploy කරන්න
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mrsanon/asiata)
+
 
 ---------------------------------   
 
