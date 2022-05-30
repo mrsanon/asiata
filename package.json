@@ -1,0 +1,44 @@
+{
+  "name": "Asiatabot",
+  "version": "1.0.1",
+  "description": "Asiatabot happy for whatsapp.",
+  "main": "/Asiatabot/bot.js",
+  "scripts": {
+    "start": "supervisor -s bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsanon/asiata.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "ai",
+    "api",
+    "unlimited",
+    "asenadev",
+    "machine learning",
+    "automatic",
+    "whatsapp web",
+    "whatsapp api"
+  ],
+  "author": "THISAN",
+  "developer": "THISAN",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mrsanon/asiata/issues"
+  },
+  "homepage": "https://github.com/mrsanon/asiata",
+  "dependencies": {
+   
+    "Asiatabot": "^1.0.0",
+    "hxz-api": "^1.0.1",
+    "emoji-api": "^2.0.1",  
+    "cobra_dl": "^1.0.11",
+    "audd.io": "^3.0.2" ,
+    "@lh2020/speedtest-net":"^2.1.1"
+   
+		
+
+  }
+}
