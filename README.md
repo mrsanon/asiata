@@ -1,4 +1,4 @@
- <h1 align="center"><b>🐋AQuaBot 🐋 An user Bot for Whatsapp</b></h1>
+ <h1 align="center"><b> An user Bot for Whatsapp</b></h1>
  ### ඔබට පහසුවෙන් QR කේතය Repl.it මඟින් ලබා ගත හැක.. පහල බටනය CLICK කරන්න
 
 ## 👨‍🔧Setup 
