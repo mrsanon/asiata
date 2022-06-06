@@ -4,7 +4,7 @@
     "description": "ASIATABOT  - Makes it easy and fun to use Whatsapp.",
     "logo": "https://telegra.ph/file/5e6b637122b3353a7902b.jpg",
     "keywords": ["whatsapp", "userbot", "asiata", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/iamMagma/ptsp",
+    "repository": "https://github.com/mrsanon/asiata",
     "website":   "https://sanuw-api.herokuapp.com/",
     "success_url": "https://sanuw-api.herokuapp.com/",
     "stack": "container",
