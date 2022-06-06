@@ -6,7 +6,7 @@
 ### සරල ක්‍රමය
 
 #### ඔබට පහසුවෙන්ම Repl.it මඟින් ASIATA QR කේතය ලබා ගන්න පුලුවන්..පහල  බටනය භාවිත කරන්න
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@RohanaKumara/SL-ASIATA?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@Thisan01/ASIATA-WA?v=1)
 
 ASIATA ගොඩනැගීමට ඔබට ජංගම දුරකථන 2 ක් අවශ්‍ය වේ!
 ඔබ දෙවන උපාංගයෙන් bot ක්‍රියා කරනු ඇත. 
